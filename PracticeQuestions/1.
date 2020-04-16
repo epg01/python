@@ -53,10 +53,11 @@ ________________________________________________________________________________
 'spam' * 3
 
 1. La primera linea utiliza el operador de concatenacion de string y por tanto mostrara lo siguiente:
-'spamspamsspam'
+'spamspamspam'
 
 2. La segunda linea utiliza el operador de repetir string y por tanto mostrara lo siguiente:
 'spamspamspam'
+Por tanto hacen lo mismo.
 _______________________________________________________________________________________________________________________
 
 8. Why is eggs a valid variable name while 100 is invalid?
