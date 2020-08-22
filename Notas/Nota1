@@ -1,0 +1,160 @@
+Chapter2:
+* Boolean data.
+
+Regarding Boolean data, it is actually other data types  in the Python programming lenguaje.
+# Con respecto a los datos Boolean, es en realidad otros tipos de datos en el lenguaje de programción Python.
+
+Example:
+
+>>> Data1 = [1,2,3,4]   # A list was created.
+>>> Data2 = [1,2,3,4]   # A list was created.
+>>> Data1 == Data2
+True                    # Boolean Data.
+>>> Data1 != Data2
+False                   # Boolean Data.
+
+* Comparison Operators
+
+The == and != operators can actually work with values of any data type.
+# los operadores == != pueden funcionar trabajar con cualquier tipo de datos.
+
+The <, <=, > and >= operators on the other hand, work properly only with integer and floating-point values.
+
+# los operadores <, <=, > y >= por otro lado, funcionan correctamente solo con valores enteros y con punto decímal.
+
+* Boolean Operators
+
+The three Boolean operators ('and', 'or' and 'not') are used to compare Boolean valeues.
+
+# Los tres operadores Boolean ('and, 'or' y 'not') son usados para comparar valores Boolean.
+
+* Elements of Flow Control
+
+Flow Control statemetns often start with a part called tha "condition", and all are
+followed by a block of code called the "clause".
+
+# Las sentencias de control de flujo a menudo comienzas con una parta llamada
+la "condición", y todos son seguidos por un bloque de código llamada la clausura.
+
+Conditions:
+
+The Boolean expression you have seen so far could all be considered conditions, which
+are the same things as expression; "condition" is just a more specific name in the
+context of flow control statements.
+
+# Todas las expresiones Booleanas que has visto hasta ahora podrian ser considerada
+condiciones, que el la misma cosa que una espresión; "condición" es solo un nombre
+mas específico en el contexto de sentencias de control de flujo.
+
+Blocks of code:
+
+There are three rules for blocks.
+
+# Estas son las tres reglas para los bloques.
+
+1. Blocks begin when the indentation increases.
+2. Blocks can contain other blocks.
+3. Blocks end when the indentation decreases to zero or to containing block's
+   indentation
+
+1. Los bloques comienzas cuando la identación incrementa.
+2. Los bloques pueden contener otros bloques.
+3. Los bloques finalizan cuando la identación decrese a cero o a la sangria de un
+   blque contenedor.
+
+Flow contron Statements.
+
+if Statements.
+
+In Python, an if statemetns consist of the following:
+
+* The if keyword.
+* A condition (That is, an expression that evaluates to True o False)
+* A colon
+* Staring on the next line, an indentation block of code (called the "if" clause)
+
+  if condition:
+     clause
+
+elif Statements.
+
+In code, an elif statements always consists of the following:
+
+1. The elif keyword.
+2. A condition (that is, an expression that evaluates to True or False).
+3. A colon.
+4. Starting on the next line, an indetante block of code (called the elif clause)
+
+   if condition:
+      clause
+   elif condition:
+      clause
+   elif Condition:
+      clause
+   else:
+      clause
+
+* while loop Statements.
+
+In code, while statements always consists of the following.
+
+1. The while keyword.
+2. A condition (that is, an expression that evaluates to True or False).
+3. A colon.
+4. Starting on the next line, an indented block of code (called the while claues).
+
+The "while clause" is often called the "while loop" or just the "loop".
+
+* for loop Statements.
+
+In code, the for statement looks somethings like i in range(5): and
+always includes the following.
+
+1. The "for" keyword.
+2. A variable name.
+3. The "in" keyword.
+4. A call to the "range()" method with up to three integers passed to it.
+5. A colon.
+6. Starting on the next line, an indentation block of code (called the
+   or clause).
+
+   Example
+
+   for i in range(Number): -------> for condition:
+       clause              ------->    clause
+
+* Importing Modules
+
+Python come with a set of modules called the "standard library".
+In code, the "importe" statements consists in the following.
+
+1. The "import" keyword.
+2. The name of the module.
+3. Optionally, more modules names, as long as they are sepatared by
+   commas.
+
+   Example
+
+   import random, match
+
+* from import Statements
+
+An alternative form of the "import" statements is composed of the "from"
+keyword, following by the module name, the "import" keyword, and a start
+
+	Example
+
+	from random import *
+
+With this form of "import" statements, calls to functions in "random"
+will not need the "random." prefix.
+
+Nota: To end a program, you can proceed as following.
+
+1. A module called sys
+
+     import sys          or           from sys import *
+
+2. Then use exit function
+
+   sys.exit()            or            exit()
