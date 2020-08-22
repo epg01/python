@@ -30,6 +30,10 @@ typedef struct List_ List;
 #define List_Size(list)     (list)->Size_List
 #define True                1
 
+/**
+ * List_Rem_Next - Function to remove only node from data structure.
+ */
+
 int List_Rem_Next(List *list, Element *element, void **Data)
 {
 	Element *Old_Element;
@@ -45,6 +49,10 @@ int List_Rem_Next(List *list, Element *element, void **Data)
 	return (0);
 }
 
+/**
+ * List_Destroy - Function that removes all data structure.
+ */
+
 void List_Destroy(List *list)
 {
 	char *Data;
@@ -59,8 +67,11 @@ void List_Destroy(List *list)
 	memset(list, 0, sizeof(List));
 	printf("The list will be printed\n");
 	printf("Size of the list = %d\n", List_Size(list));
-	printf("Pointer Destroy = %p\n", (void *)list->Destroy);
 }
+
+/**
+ * List_Init - Function to initialize the list.
+ */
 
 void List_Init(List *list, void (*Destroy)(void *Data))
 {
@@ -70,6 +81,10 @@ void List_Init(List *list, void (*Destroy)(void *Data))
 	list->Tail    = NULL;
 	printf("The list is initialized\n");
 }
+
+/**
+ * List_Init_Next - Function to enter a node in the list.
+ */
 
 int List_Init_Next(List *list, Element *element, void *Data)
 {
@@ -92,10 +107,18 @@ int List_Init_Next(List *list, Element *element, void *Data)
 	return (0);
 }
 
+/**
+ * Destroy - Function that destroys the data stored in the list.
+ */
+
 void Destroy(void *Data)
 {
 	free((char *)Data);
 }
+
+/**
+ * print - Applying recursion to print the list.
+ */
 
 void print(Element *Next)
 {
@@ -108,11 +131,16 @@ void print(Element *Next)
 	}
 }
 
+/**
+ * print_list - Funtion to print the list.
+ */
+
 void print_list(List *list)
 {
 	printf("The cate names are:\n");
 	print(list->Head);
 }
+
 int main(void)
 {
 	List list;
@@ -131,6 +159,7 @@ int main(void)
 		else
 			break;
 	}
+	free(String);
 	print_list(&list);
 	List_Destroy(&list);
 
