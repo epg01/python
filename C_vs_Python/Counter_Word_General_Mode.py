@@ -1,5 +1,7 @@
 # This program counts words in a general way.
 
+import pprint
+
 def Print_Welcome():
     print('The progams was initialized')
     print('This program counts the ocurrences of each word')
@@ -13,12 +15,12 @@ Print_Welcome()
 while True:
     Name = input()
     if Name == '':
+        if (len(Word_Counter)):
+            print(pprint.pformat(Word_Counter))
+        else:
+            print('No items were entered')
         break
     else:
         Word_Counter.setdefault(Name, 0)
         Word_Counter[Name] += 1;
-if (len(Word_Counter)):
-    for Word, amount in Word_Counter.items():
-        print('Word ' + Word + '     ' + 'Number of occurences = ' + str(amount))
-else:
-    print('No items were entered')
+print('Finished program')
